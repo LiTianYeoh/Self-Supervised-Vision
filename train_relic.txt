@@ -1,0 +1,5 @@
+## To start
+python main.py --config configs/relic.yaml --algo relic --arch resnet18 --task train
+
+## To continue
+python main.py --config configs/relic.yaml --algo relic --arch resnet18 --task train --resume /home/yeohlt/2_SSL_project/code/Self-Supervised-Vision/outputs/relic/resnet18/20-07-2022_23-37

@@ -1,6 +1,3 @@
-
-# Configuration file for BYOL training
-
 epochs: 1000
 eval_every: 10
 tau: 0.996
@@ -9,7 +6,7 @@ proj_dim: 128
 data:
   dataset_name: cifar10
   root: data/cifar10
-  batch_size: 512
+  batch_size: 128
   transforms:
     train:
       color_jitter:
@@ -58,7 +55,7 @@ loss_fn:
 linear_eval:
   epochs: 100
   input_dim: 128
-  batch_size: 256
+  batch_size: 128
   lr: 0.1
 
 wandb:
